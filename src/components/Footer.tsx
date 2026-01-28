@@ -11,7 +11,7 @@ export const Footer = () => {
             <img
               src={logoEcm}
               alt="E.C.M."
-              className="h-10 w-auto brightness-0 invert"
+              className="h-10 w-auto"
             />
           </div>
 
