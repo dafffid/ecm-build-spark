@@ -67,18 +67,6 @@ export const ContactSection = () => {
                   </div>
                 </div>
 
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Email</p>
-                    <a href="mailto:contact@ecm-tp.fr" className="text-muted-foreground hover:text-primary transition-colors">
-                      contact@ecm-tp.fr
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
 
