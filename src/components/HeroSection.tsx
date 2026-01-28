@@ -35,17 +35,6 @@ export const HeroSection = () => {
             <span className="text-primary">Consolidation et réparation</span><br />
             d'ouvrages d'art
           </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto animate-fade-in-up delay-200">
-            Spécialistes de la consolidation, réparation et construction d'ouvrages en région Occitanie
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-300">
-            <button onClick={scrollToMetier} className="btn-primary">
-              Découvrir notre métier
-            </button>
-            <a href="#contact" className="btn-outline border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-foreground">
-              Nous contacter
-            </a>
-          </div>
         </div>
       </div>
 

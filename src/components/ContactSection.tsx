@@ -45,9 +45,6 @@ export const ContactSection = () => {
       <div className="container-ecm">
         <div className="text-center mb-12">
           <h2 className="heading-section">Nous Contacter</h2>
-          <p className="text-body max-w-2xl mx-auto">
-            Une question ? Un projet ? N'hésitez pas à nous contacter.
-          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
@@ -70,17 +67,6 @@ export const ContactSection = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Téléphone</p>
-                    <a href="tel:+33561860000" className="text-muted-foreground hover:text-primary transition-colors">
-                      05 61 86 00 00
-                    </a>
-                  </div>
-                </div>
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
