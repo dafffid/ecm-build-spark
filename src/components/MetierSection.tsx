@@ -10,9 +10,6 @@ export const MetierSection = () => {
       <div className="container-ecm">
         <div className="text-center mb-12">
           <h2 className="heading-section">Notre Métier</h2>
-          <p className="text-body max-w-3xl mx-auto">
-            Une expertise de 30 ans au service de vos projets
-          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
