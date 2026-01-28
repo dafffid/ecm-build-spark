@@ -6,7 +6,7 @@ const navItems = [
   { label: "Accueil", href: "#accueil" },
   { label: "Notre Métier", href: "#metier" },
   { label: "Nos Activités", href: "#activites" },
-  { label: "Contact", href: "#contact" },
+  { label: "Nous contacter", href: "#contact" },
 ];
 
 export const Header = () => {
