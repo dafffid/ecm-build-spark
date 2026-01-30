@@ -1,8 +1,7 @@
-import logoMase from "@/assets/logo-mase.jpg";
-import logoStrres from "@/assets/logo-strres.jpg";
-import logoFntp from "@/assets/logo-fntp.png";
-import photoChantier2 from "@/assets/photo-chantier-2.png";
-import photoChantier3 from "@/assets/photo-chantier-3.png";
+import logoCertification from "@/assets/logo-certification.svg";
+import metier1 from "@/assets/metier-1.jpg";
+import metier2 from "@/assets/metier-2.jpg";
+import metier3 from "@/assets/metier-3.jpg";
 
 export const MetierSection = () => {
   return (
@@ -33,46 +32,38 @@ export const MetierSection = () => {
             <p className="text-body">
               Située au <strong className="text-foreground">sud-ouest de Toulouse</strong>, nous intervenons principalement en <strong className="text-foreground">région Occitanie</strong> et sur les zones centrales et orientales des Pyrénées. Nous vous assurons une relation privilégiée avec un interlocuteur de proximité.
             </p>
-            <p className="text-body">
-              À l'écoute de nos partenaires et clients, nous sommes dans une démarche d'amélioration continue confirmée par une <strong className="text-foreground">certification MASE depuis 2015</strong>.
+            <p className="text-body no-orphan">
+              À l'écoute de nos partenaires et clients, nous sommes dans une démarche d'amélioration continue confirmée par une <strong className="text-foreground">certification MASE depuis&nbsp;2015.</strong>
             </p>
           </div>
 
-          {/* Images */}
+          {/* Images - 3 images layout */}
           <div className="grid grid-cols-2 gap-4">
             <img
-              src={photoChantier2}
+              src={metier1}
               alt="Travaux de génie civil ECM"
-              className="rounded-xl shadow-lg w-full h-48 md:h-64 object-cover"
+              className="rounded-xl shadow-lg w-full h-48 md:h-56 object-cover"
             />
             <img
-              src={photoChantier3}
+              src={metier2}
               alt="Réparation d'ouvrages ECM"
-              className="rounded-xl shadow-lg w-full h-48 md:h-64 object-cover mt-8"
+              className="rounded-xl shadow-lg w-full h-48 md:h-56 object-cover mt-8"
+            />
+            <img
+              src={metier3}
+              alt="Intervention en milieu difficile ECM"
+              className="rounded-xl shadow-lg w-full h-48 md:h-56 object-cover col-span-2"
             />
           </div>
         </div>
 
         {/* Partner Logos */}
         <div className="border-t border-border pt-12">
-          <p className="text-center text-muted-foreground text-sm mb-8 uppercase tracking-wider">
-            Nos certifications et affiliations
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+          <div className="flex justify-center items-center">
             <img
-              src={logoMase}
-              alt="MASE - Améliorer la Performance SSE"
-              className="h-16 md:h-20 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-            />
-            <img
-              src={logoStrres}
-              alt="STRRES"
-              className="h-16 md:h-20 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-            />
-            <img
-              src={logoFntp}
-              alt="FNTP - Fédération Nationale des Travaux Publics"
-              className="h-16 md:h-20 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+              src={logoCertification}
+              alt="Certifications MASE, STRRES, FNTP"
+              className="max-w-full h-auto max-h-24 md:max-h-32"
             />
           </div>
         </div>

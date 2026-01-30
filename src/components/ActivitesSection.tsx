@@ -1,11 +1,11 @@
-import { FileText, HardHat, Wrench } from "lucide-react";
-import photoChantier4 from "@/assets/photo-chantier-4.png";
-import photoChantier5 from "@/assets/photo-chantier-5.png";
+import activite1 from "@/assets/activite-1.jpg";
+import activite2 from "@/assets/activite-2.jpg";
+import activite3 from "@/assets/activite-3.jpg";
+import activite4 from "@/assets/activite-4.jpg";
 
 const activities = [
   {
-    icon: FileText,
-    title: "Étude",
+    title: "Etudes",
     subtitle: "Des compétences maîtrisées pour répondre à vos besoins",
     description:
       "ECM vous accompagne pour étudier les solutions les plus adaptées et les mettre en œuvre. Nos compétences permettent de gérer vos projets au niveau technique et documentaire.",
@@ -17,7 +17,6 @@ const activities = [
     ],
   },
   {
-    icon: HardHat,
     title: "Construction",
     subtitle: "Des compétences confirmées pour apporter des solutions sur mesure",
     description:
@@ -38,7 +37,6 @@ const activities = [
     ],
   },
   {
-    icon: Wrench,
     title: "Maintenance",
     subtitle: "Des compétences spécialisées pour entretenir votre patrimoine",
     description:
@@ -66,18 +64,12 @@ export const ActivitesSection = () => {
       <div className="container-ecm">
         <div className="text-center mb-12">
           <h2 className="heading-section">Nos Activités</h2>
-          <p className="text-body max-w-3xl mx-auto">
-            De l'étude à la maintenance, nous vous accompagnons à chaque étape de votre projet
-          </p>
         </div>
 
         {/* Activity Cards */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {activities.map((activity, index) => (
             <div key={index} className="card-activity">
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
-                <activity.icon className="w-7 h-7 text-primary" />
-              </div>
               <h3 className="text-xl font-bold text-foreground mb-2">{activity.title}</h3>
               <p className="text-sm text-primary font-medium mb-4">{activity.subtitle}</p>
               <p className="text-body text-sm mb-6">{activity.description}</p>
@@ -114,17 +106,27 @@ export const ActivitesSection = () => {
           ))}
         </div>
 
-        {/* Gallery */}
-        <div className="grid md:grid-cols-2 gap-6">
+        {/* Gallery - 4 images in a row */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <img
-            src={photoChantier4}
-            alt="Chantier de construction ECM"
-            className="rounded-xl shadow-lg w-full h-64 md:h-80 object-cover"
+            src={activite1}
+            alt="Travaux de fondation ECM"
+            className="rounded-xl shadow-lg w-full h-40 md:h-48 object-cover"
           />
           <img
-            src={photoChantier5}
-            alt="Travaux de maintenance ECM"
-            className="rounded-xl shadow-lg w-full h-64 md:h-80 object-cover"
+            src={activite2}
+            alt="Construction industrielle ECM"
+            className="rounded-xl shadow-lg w-full h-40 md:h-48 object-cover"
+          />
+          <img
+            src={activite3}
+            alt="Aménagement hydraulique ECM"
+            className="rounded-xl shadow-lg w-full h-40 md:h-48 object-cover"
+          />
+          <img
+            src={activite4}
+            alt="Réparation de maçonnerie ECM"
+            className="rounded-xl shadow-lg w-full h-40 md:h-48 object-cover"
           />
         </div>
       </div>

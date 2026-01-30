@@ -144,11 +144,18 @@
   }
 
   .nav-link {
-    @apply text-white font-medium transition-colors duration-200 hover:text-primary relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)];
+    @apply text-foreground font-medium transition-colors duration-200 hover:text-primary relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full;
   }
 
   .nav-link-active {
     @apply text-primary after:w-full;
+  }
+
+  /* Prevent orphan punctuation - keeps last word with punctuation together */
+  .no-orphan {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    hyphens: none;
   }
 }
 
