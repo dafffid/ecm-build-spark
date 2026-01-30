@@ -12,7 +12,7 @@ export const HeroSection = () => {
   return (
     <section
       id="accueil"
-      className="relative flex flex-col min-h-screen"
+      className="relative flex flex-col min-h-screen pt-40 md:pt-48 lg:pt-56"
     >
       {/* Title Section - Always visible and prioritized */}
       <div className="relative z-10 bg-foreground py-8 md:py-12 lg:py-16">
@@ -26,11 +26,11 @@ export const HeroSection = () => {
       </div>
 
       {/* Image Section - Full display on desktop, adapted on mobile */}
-      <div className="relative flex-1 w-full bg-muted">
+      <div className="relative flex-1 w-full bg-muted min-h-[40vh] md:min-h-[50vh] lg:min-h-[60vh]">
         <img
           src={photoAccueil}
           alt="Chantier ECM"
-          className="w-full h-full object-contain md:object-cover lg:object-contain"
+          className="w-full h-full object-contain"
         />
       </div>
 
