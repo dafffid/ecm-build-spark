@@ -1,5 +1,5 @@
 import { ChevronDown } from "lucide-react";
-import photoChantier1 from "@/assets/photo-chantier-1.png";
+import photoAccueil from "@/assets/photo-accueil.jpg";
 
 export const HeroSection = () => {
   const scrollToMetier = () => {
@@ -17,7 +17,7 @@ export const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src={photoChantier1}
+          src={photoAccueil}
           alt="Chantier ECM"
           className="w-full h-full object-cover"
         />
@@ -27,10 +27,7 @@ export const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container-ecm px-4 md:px-8 text-center">
         <div className="max-w-4xl mx-auto">
-          <p className="text-primary font-semibold text-sm md:text-base tracking-widest uppercase mb-4 animate-fade-in-up">
-            Depuis 1991
-          </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in-up delay-100">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in-up">
             Génie Civil<br />
             <span className="text-primary">Consolidation et réparation</span><br />
             d'ouvrages d'art
