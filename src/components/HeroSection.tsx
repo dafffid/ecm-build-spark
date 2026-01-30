@@ -21,7 +21,6 @@ export const HeroSection = () => {
           alt="Chantier ECM"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-ecm-overlay/70" />
       </div>
 
       {/* Content */}
