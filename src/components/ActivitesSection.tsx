@@ -64,7 +64,7 @@ const activities = [
 
 export const ActivitesSection = () => {
   return (
-    <section id="activites" className="section-padding bg-background">
+    <section id="activites" className="section-padding bg-background scroll-mt-40 md:scroll-mt-48 lg:scroll-mt-56">
       <div className="container-ecm">
         <div className="text-center mb-12">
           <h2 className="heading-section">Nos Activités</h2>
