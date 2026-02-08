@@ -56,7 +56,7 @@ const activities = [
       },
       {
         name: "Protection",
-        items: ["Gabionnage, cloutage, perrés maçonnés", "Enrochement", "Ancrage"],
+        items: ["Gabionnage, cloutage, perrés maçonnés.", "Enrochement.", "Ancrage."],
       },
     ],
   },
