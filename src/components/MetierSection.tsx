@@ -1,4 +1,4 @@
-import logoCertification from "@/assets/logo-certification.svg";
+import logoCertification from "@/assets/logo-certification.png";
 import metier1 from "@/assets/metier-1.jpg";
 import metier2 from "@/assets/metier-2.jpg";
 import metier3 from "@/assets/metier-3.jpg";
@@ -15,25 +15,31 @@ export const MetierSection = () => {
           {/* Text Content */}
           <div className="space-y-6">
             <p className="text-body">
-              <strong className="text-foreground">Forte de 30 ans d'expérience</strong>, E.C.M. (Etude Construction Maintenance) est un acteur majeur dans le domaine du Génie Civil spécialisée dans les réparations d'ouvrages.
+              <strong className="text-foreground">Forte de 30 ans d'expérience</strong>, E.C.M. (Etudes Construction Maintenance) est un acteur majeur dans le domaine du Génie Civil, spécialisé dans les réparations d'ouvrages.
             </p>
             <p className="text-body">
-              Notre expertise en conception vous accompagne, de l'expression de votre besoin, et tout au long de votre projet.
+              Nous sommes spécialisés dans le domaine du génie civil, <strong className="text-foreground">de la consolidation et réparation d'ouvrages d'art et du génie civil industriel</strong>.
             </p>
             <p className="text-body">
-              Nous sommes spécialisés dans le domaine du <strong className="text-foreground">génie civil</strong>, de la <strong className="text-foreground">consolidation et réparation d'ouvrages d'art</strong> et du <strong className="text-foreground">génie civil industriel</strong>.
+              Nous accompagnons des acteurs publics et privés dans leurs projets d'aménagement et de réhabilitation des ouvrages.
             </p>
             <p className="text-body">
-              Nous accompagnons des acteurs publics et privés dans leurs projets d'aménagement et de réhabilitation des ouvrages. Notre entreprise à taille humaine garantit une forte réactivité et une grande souplesse pour répondre aux besoins de nos clients.
+              Notre entreprise à taille humaine garantit <strong className="text-foreground">une forte réactivité et une grande souplesse pour répondre aux besoins de nos clients</strong>.
             </p>
             <p className="text-body">
-              Depuis 1991, nous avons pu acquérir un savoir-faire et des compétences dans les travaux spéciaux. Nous intervenons dans des environnements variés et particulièrement dans des milieux difficiles.
+              Depuis 1991, nous avons pu acquérir un savoir-faire et des compétences dans <strong className="text-foreground">les travaux spéciaux</strong>.
             </p>
             <p className="text-body">
-              Située au <strong className="text-foreground">sud-ouest de Toulouse</strong>, nous intervenons principalement en <strong className="text-foreground">région Occitanie</strong> et sur les zones centrales et orientales des Pyrénées. Nous vous assurons une relation privilégiée avec un interlocuteur de proximité.
+              Nous intervenons dans des environnements variés et particulièrement dans des <strong className="text-foreground">milieux difficiles</strong>.
+            </p>
+            <p className="text-body">
+              Située au sud-ouest de Toulouse, nous intervenons principalement en région Occitanie et sur les zones centrales et orientales des Pyrénées.
+            </p>
+            <p className="text-body">
+              Nous vous assurons une <strong className="text-foreground">relation privilégiée avec un interlocuteur de proximité</strong>.
             </p>
             <p className="text-body no-orphan">
-              À l'écoute de nos partenaires et clients, nous sommes dans une démarche d'amélioration continue confirmée par une <strong className="text-foreground">certification MASE depuis&nbsp;2015.</strong>
+              À l'écoute de nos partenaires et clients, nous sommes dans une démarche d'amélioration continue confirmée par une <strong className="text-foreground">certification MASE depuis&nbsp;2015</strong>.
             </p>
           </div>
 
@@ -63,7 +69,7 @@ export const MetierSection = () => {
             <img
               src={logoCertification}
               alt="Certifications MASE, STRRES, FNTP"
-              className="max-w-full h-auto max-h-24 md:max-h-32"
+              className="max-w-full h-auto max-h-48 md:max-h-64"
             />
           </div>
         </div>
