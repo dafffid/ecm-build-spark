@@ -41,7 +41,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="section-padding bg-secondary">
+    <section id="contact" className="section-padding bg-secondary scroll-mt-40 md:scroll-mt-48 lg:scroll-mt-56">
       <div className="container-ecm">
         <div className="text-center mb-12">
           <h2 className="heading-section">Nous Contacter</h2>
