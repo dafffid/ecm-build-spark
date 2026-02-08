@@ -6,10 +6,12 @@ import activite4 from "@/assets/activite-4.jpg";
 const activities = [
   {
     title: "Etudes",
+    tagline: "Notre expertise en conception vous accompagne, de l'expression de votre besoin, et tout au long de votre projet.",
     subtitle: "Des compétences maîtrisées pour répondre à vos besoins",
     description:
       "ECM vous accompagne pour étudier les solutions les plus adaptées et les mettre en œuvre. Nos compétences permettent de gérer vos projets au niveau technique et documentaire.",
     items: [
+      "Études de conception",
       "Définition sommaire de projet",
       "Études d'exécution",
       "Études de méthodes d'exécution",
@@ -18,6 +20,7 @@ const activities = [
   },
   {
     title: "Construction",
+    tagline: "Notre savoir-faire nous permet de répondre à toutes vos demandes afin de proposer des prestations adaptées.",
     subtitle: "Des compétences confirmées pour apporter des solutions sur mesure",
     description:
       "ECM réalise les travaux de constructions de structures en maçonnerie et en béton. Notre connaissance du métier et nos équipes expérimentées offrent des prestations de qualité.",
@@ -38,17 +41,18 @@ const activities = [
   },
   {
     title: "Maintenance",
+    tagline: "Notre expérience vous apporte des solutions adaptées pour l'entretien et la pérennisation de vos ouvrages.",
     subtitle: "Des compétences spécialisées pour entretenir votre patrimoine",
     description:
       "ECM assure l'entretien, la réparation et le renforcement de vos ouvrages. Notre maîtrise des procédés spéciaux garantit le respect des ouvrages et de leur environnement.",
     categories: [
       {
         name: "Réhabilitation",
-        items: ["Confortement de fondations", "Béton et mortier projeté", "Reconstruction de maçonnerie", "Étanchéité"],
+        items: ["Confortement de fondations.", "Béton et mortier projeté par voie sèche ou humide mortier projeté.", "Reconstruction de maçonnerie en pierres ou briques.", "Application ou injection de mortier hydraulique.", "Étanchéité."],
       },
       {
         name: "Renforcement",
-        items: ["Renforcement de structures béton armé", "Consolidation par tirants ou injection", "Élargissement d'ouvrages"],
+        items: ["Renforcement de structures béton armé.", "Consolidation des structures par tirants ou injection.", "Renforts par structure béton.", "Élargissement d'ouvrages."],
       },
       {
         name: "Protection",
@@ -69,8 +73,9 @@ export const ActivitesSection = () => {
         {/* Activity Cards */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {activities.map((activity, index) => (
-            <div key={index} className="card-activity">
+          <div key={index} className="card-activity">
               <h3 className="text-xl font-bold text-foreground mb-2">{activity.title}</h3>
+              <p className="text-sm font-bold text-foreground mb-2">{activity.tagline}</p>
               <p className="text-sm text-primary font-medium mb-4">{activity.subtitle}</p>
               <p className="text-body text-sm mb-6">{activity.description}</p>
 
