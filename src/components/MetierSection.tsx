@@ -5,7 +5,7 @@ import metier3 from "@/assets/metier-3.jpg";
 
 export const MetierSection = () => {
   return (
-    <section id="metier" className="section-padding bg-secondary">
+    <section id="metier" className="section-padding bg-secondary scroll-mt-40 md:scroll-mt-48 lg:scroll-mt-56">
       <div className="container-ecm">
         <div className="text-center mb-12">
           <h2 className="heading-section">Notre Métier</h2>
