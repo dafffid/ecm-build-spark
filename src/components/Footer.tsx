@@ -1,4 +1,4 @@
-import logoEcm from "@/assets/logo-ecm-new.svg";
+import logoEcm from "@/assets/logo-ecm-nav.png";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
