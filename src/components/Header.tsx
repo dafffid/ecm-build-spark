@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import logoEcm from "@/assets/logo-ecm-new.svg";
+import logoEcm from "@/assets/logo-ecm-nav.png";
 
 const navItems = [
   { label: "Accueil", href: "#accueil" },
