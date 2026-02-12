@@ -42,20 +42,20 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background shadow-sm overflow-x-hidden">
       <div className="container-ecm">
-        <nav className="flex items-center justify-between h-16 sm:h-20 md:h-48 lg:h-56 px-4 md:px-8">
+        <nav className="flex items-center justify-between h-16 sm:h-20 lg:h-24 xl:h-28 px-4 lg:px-8">
           {/* Logo */}
           <a href="#accueil" onClick={() => handleNavClick("#accueil")} className="flex-shrink-0 min-w-0">
             <img
               src={logoEcm}
               alt="E.C.M. - Etude Construction Maintenance"
-              className="h-12 sm:h-16 md:h-[22rem] lg:h-96 w-auto max-w-[70vw] md:max-w-none object-contain"
+              className="h-12 sm:h-14 lg:h-20 xl:h-24 w-auto max-w-[70vw] lg:max-w-none object-contain"
             />
           </a>
 
           {/* Desktop Navigation */}
-          <ul className="hidden md:flex items-center gap-8">
+          <ul className="hidden lg:flex items-center gap-4 xl:gap-8 flex-shrink-0">
             {navItems.map((item) => (
               <li key={item.href}>
                 <button
@@ -73,7 +73,7 @@ export const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-foreground"
+            className="lg:hidden p-2 text-foreground"
             aria-label="Menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -82,7 +82,7 @@ export const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-background border-t border-border animate-fade-in">
+          <div className="lg:hidden bg-background border-t border-border animate-fade-in">
             <ul className="flex flex-col py-4">
               {navItems.map((item) => (
                 <li key={item.href}>
