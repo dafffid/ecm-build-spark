@@ -44,13 +44,13 @@ export const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background shadow-sm">
       <div className="container-ecm">
-        <nav className="flex items-center justify-between h-40 md:h-48 lg:h-56 px-4 md:px-8">
+        <nav className="flex items-center justify-between h-16 sm:h-20 md:h-48 lg:h-56 px-4 md:px-8">
           {/* Logo */}
-          <a href="#accueil" onClick={() => handleNavClick("#accueil")} className="flex-shrink-0">
+          <a href="#accueil" onClick={() => handleNavClick("#accueil")} className="flex-shrink-0 min-w-0">
             <img
               src={logoEcm}
               alt="E.C.M. - Etude Construction Maintenance"
-              className="h-56 sm:h-72 md:h-[22rem] lg:h-96 w-auto"
+              className="h-12 sm:h-16 md:h-[22rem] lg:h-96 w-auto max-w-[70vw] md:max-w-none object-contain"
             />
           </a>
 
