@@ -22,22 +22,38 @@ export const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const response = await fetch("/.netlify/functions/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    toast.success("Message envoyé avec succès !", {
-      description: "Nous vous répondrons dans les plus brefs délais.",
-    });
+      const data = await response.json();
 
-    setFormData({
-      nom: "",
-      prenom: "",
-      email: "",
-      telephone: "",
-      entreprise: "",
-      message: "",
-    });
-    setIsSubmitting(false);
+      if (!response.ok || data.error) {
+        throw new Error(data.error || "Erreur lors de l'envoi.");
+      }
+
+      toast.success("Message envoyé avec succès !", {
+        description: "Nous vous répondrons dans les plus brefs délais.",
+      });
+
+      setFormData({
+        nom: "",
+        prenom: "",
+        email: "",
+        telephone: "",
+        entreprise: "",
+        message: "",
+      });
+    } catch (error: any) {
+      toast.error("Erreur d'envoi", {
+        description: error.message || "Veuillez réessayer plus tard.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
