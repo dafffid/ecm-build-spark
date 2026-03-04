@@ -34,8 +34,9 @@ export async function handler(event: any) {
     const resend = new Resend(process.env.RESEND_API_KEY);
 
     await resend.emails.send({
-      from: "ECM Contact <onboarding@resend.dev>",
+      from: "ECM Contact <noreply@ecm-construction.fr>",
       to: "contact@ecm-construction.fr",
+      reply_to: email,
       subject: `Nouveau message de ${prenom} ${nom} - ${entreprise}`,
       html: `
         <h2>Nouveau message depuis le site ECM</h2>
