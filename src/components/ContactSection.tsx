@@ -86,12 +86,18 @@ export const ContactSection = () => {
               </div>
             </div>
 
-            {/* Map placeholder */}
-            <div className="bg-muted rounded-xl h-64 flex items-center justify-center">
-              <div className="text-center text-muted-foreground">
-                <MapPin className="w-12 h-12 mx-auto mb-2 opacity-50" />
-                <p>Villeneuve-Tolosane, France</p>
-              </div>
+            {/* Map */}
+            <div className="rounded-xl h-64 overflow-hidden border border-border">
+              <iframe
+                title="Localisation ECM - Villeneuve-Tolosane"
+                src="https://www.google.com/maps?q=1%20ZA%20Les%20Pousses%2C%2031270%20Villeneuve-Tolosane%2C%20France&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
           </div>
 
